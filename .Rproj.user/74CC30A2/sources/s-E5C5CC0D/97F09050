@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1553949964077.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3445225929",
+    "id" : "97F09050",
+    "lastKnownWriteTime" : 1553953497,
+    "last_content_update" : 1553953497836,
+    "path" : "~/R Projects/DotaLandscape/datdota_fetch.R",
+    "project_path" : "datdota_fetch.R",
+    "properties" : {
+        "cursorPosition" : "12,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
