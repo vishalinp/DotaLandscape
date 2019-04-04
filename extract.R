@@ -7,11 +7,10 @@ library(jsonlite)
 matches <- readRDS('matchdata/matches_json.rda')
 
 #Generate empty dataframes
-
 player_perf <- data.frame()
 match_data <- data.frame()
 
-
+#Parse json match data
 for(i in 1:length(matches))
 {
   match_id <- matches[i]$data$match_id
@@ -48,4 +47,14 @@ for(i in 1:length(matches))
   match_data <- rbind(match_data, match)
   
 }
+
+#Exploratory
+heal <- player_perf %>%
+  
+  group_by(MatchId, Win, patch) %>%
+  summarise(Team_Heal = sum(hero_healing),
+            Team_Damage = sum(hero_damage))
+
+ggplot(heal, aes(x=Team_Heal, y=Team_Damage)) +
+  geom_point(aes(colour=Win))
 
